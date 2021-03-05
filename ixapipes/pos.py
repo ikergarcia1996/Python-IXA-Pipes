@@ -1,8 +1,8 @@
 import os
 from typing import List
 from shlex import quote
-from IxaPipesModule import IxaPipesModule
-from models import get_model
+from ixapipes.IxaPipesModule import IxaPipesModule
+from ixapipes.models import get_model
 
 
 class IxaPipesPosTagger(IxaPipesModule):

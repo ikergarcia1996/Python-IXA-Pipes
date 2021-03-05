@@ -1,7 +1,7 @@
 import os
 from typing import List
 from shlex import quote
-from IxaPipesModule import IxaPipesModule
+from ixapipes.IxaPipesModule import IxaPipesModule
 
 
 class IxaPipesTokenizer(IxaPipesModule):

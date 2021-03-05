@@ -1,4 +1,4 @@
-from utils import download_file
+from ixapipes.utils import download_file
 import os
 
 models = {

@@ -1,6 +1,6 @@
 from abc import abstractmethod
 import os
-from utils import download_file
+from ixapipes.utils import download_file
 import threading
 import subprocess
 from typing import List, Callable, Union
