@@ -16,7 +16,7 @@ class IxaPipesPosTagger(IxaPipesModule):
     _executable_path: str = os.path.expanduser(
         "~/.cache/python-ixa-pipes/ixa-pipe-pos-1.5.3-exec.jar"
     )
-    _wget_url: str = "https://drive.google.com/u/0/uc?id=1Qpyihxc5Mf9Z6adMhtAxOLpuf5hJ-NPF&export=download"
+    _wget_url: str = "https://github.com/ikergarcia1996/IxaPipes-models-executables/raw/main/ixa-pipe-pos-1.5.3-exec.jar"
 
     def __init__(
         self,

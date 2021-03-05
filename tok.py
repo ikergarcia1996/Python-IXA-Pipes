@@ -17,7 +17,7 @@ class IxaPipesTokenizer(IxaPipesModule):
     _executable_path: str = os.path.expanduser(
         "~/.cache/python-ixa-pipes/ixa-pipe-tok-2.0.0-exec.jar"
     )
-    _wget_url: str = "https://drive.google.com/u/0/uc?id=1FVLapcQq2ZEfcre3SY_cNcBHuQoYKHNe&export=download"
+    _wget_url: str = "https://github.com/ikergarcia1996/IxaPipes-models-executables/raw/main/ixa-pipe-tok-2.0.0-exec.jar"
 
     def __init__(
         self,
