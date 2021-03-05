@@ -3,7 +3,7 @@ import os
 from ixapipes.utils import download_file
 import threading
 import subprocess
-from typing import List, Callable, Union
+from typing import Callable
 from shlex import quote
 
 
@@ -87,11 +87,11 @@ class IxaPipesModule:
 
     def __call__(
         self,
-        text_list_or_path: Union[str, List[str]],
+        text_list_or_path: str,
         output_path: str = None,
     ):
 
-        if os.path.exists(text_list_or_path):
+        if len(text_list_or_path) > 512 or os.path.exists(text_list_or_path):
             # Is a path to a file
             return self._run_file(file_path=text_list_or_path, output_path=output_path)
         else:
