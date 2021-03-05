@@ -91,7 +91,7 @@ class IxaPipesModule:
         output_path: str = None,
     ):
 
-        if len(text_list_or_path) > 512 or os.path.exists(text_list_or_path):
+        if os.path.exists(text_list_or_path):
             # Is a path to a file
             return self._run_file(file_path=text_list_or_path, output_path=output_path)
         else:
