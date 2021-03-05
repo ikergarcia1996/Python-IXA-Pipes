@@ -89,7 +89,6 @@ class IxaPipesModule:
         self,
         text_list_or_path: Union[str, List[str]],
         output_path: str = None,
-        batch_size: int = 1024,
     ):
 
         if os.path.exists(text_list_or_path):
