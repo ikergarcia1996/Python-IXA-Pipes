@@ -53,7 +53,7 @@ class IxaPipesPosTagger(IxaPipesModule):
             output_format=output_format,
         )
 
-    def _run_server(
+    def _get_command(
         self,
     ):
 
@@ -83,4 +83,4 @@ class IxaPipesPosTagger(IxaPipesModule):
             f"{' '.join(options)}"
         )
 
-        os.system(command)
+        return command

@@ -16,6 +16,9 @@ models = {
     "morph-models-1.5.0/gl/gl-pos-perceptron-autdict05-ctag.bin": "https://github.com/ikergarcia1996/IxaPipes-models-executables/raw/main/morph-models-1.5.0/gl/gl-pos-perceptron-autdict05-ctag.bin",
     "morph-models-1.5.0/nl/nl-lemma-perceptron-alpino.bin": "https://github.com/ikergarcia1996/IxaPipes-models-executables/raw/main/morph-models-1.5.0/nl/nl-lemma-perceptron-alpino.bin",
     "morph-models-1.5.0/nl/nl-pos-perceptron-autodict01-alpino.bin": "https://github.com/ikergarcia1996/IxaPipes-models-executables/raw/main/morph-models-1.5.0/nl/nl-pos-perceptron-autodict01-alpino.bin",
+    "ud-morph-models-1.5.0/it/it-lemma-perceptron-ud.bin": "https://github.com/ikergarcia1996/IxaPipes-models-executables/blob/main/ud-morph-models-1.5.0/it/it-lemma-perceptron-ud.bin",
+    "ud-morph-models-1.5.0/it/it-pos-perceptron-autodict01-ud.bin": "https://github.com/ikergarcia1996/IxaPipes-models-executables/blob/main/ud-morph-models-1.5.0/it/it-pos-perceptron-autodict01-ud.bin",
+    "ud-morph-models-1.5.0/it/it-universal.properties": "https://github.com/ikergarcia1996/IxaPipes-models-executables/blob/main/ud-morph-models-1.5.0/it/it-universal.properties",
 }
 
 

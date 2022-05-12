@@ -1,5 +1,6 @@
 from abc import abstractmethod
 import os
+import signal
 from ixapipes.utils import download_file
 import threading
 import subprocess
@@ -46,16 +47,26 @@ class IxaPipesModule:
             target=run_server_function, args=[]
         )
 
-        self.server_thread.setDaemon(True)
+        self.server_thread.daemon = True
         self.server_thread.start()
 
+        self.process_id: int = -1
+
     @abstractmethod
-    def _run_server(self, *args):
+    def _get_command(self):
         """To Override"""
         pass
 
+    def _run_server(self, *args):
+        self.server = subprocess.Popen(
+            self._get_command(),
+            stdout=subprocess.PIPE,
+            shell=True,
+            preexec_fn=os.setsid,
+        )
+
     def close(self):
-        self.stop_server.set()
+        os.killpg(os.getpgid(self.server.pid), signal.SIGTERM)
         print(f"Server closed")
 
     def __exit__(self, exc_type, exc_val, exc_tb):

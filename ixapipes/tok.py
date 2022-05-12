@@ -55,7 +55,7 @@ class IxaPipesTokenizer(IxaPipesModule):
             output_format=output_format,
         )
 
-    def _run_server(
+    def _get_command(
         self,
     ):
 
@@ -91,4 +91,5 @@ class IxaPipesTokenizer(IxaPipesModule):
             f"-p {quote(str(self.server_port))} "
             f"{' '.join(options)}"
         )
-        os.system(command)
+
+        return command
