@@ -6,6 +6,7 @@ import threading
 import subprocess
 from typing import Callable
 from shlex import quote
+import time
 
 
 class IxaPipesModule:
@@ -50,7 +51,7 @@ class IxaPipesModule:
         self.server_thread.daemon = True
         self.server_thread.start()
 
-        self.process_id: int = -1
+        time.sleep(1.0)  # wait for server to start
 
     @abstractmethod
     def _get_command(self):

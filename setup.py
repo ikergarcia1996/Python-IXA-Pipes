@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="ixapipes",
-    version="0.0.8",
+    version="0.0.9",
     license="Apache License 2.0",
     author="Iker García Ferrero",
     author_email="iker.garciaf@ehu.eus",
